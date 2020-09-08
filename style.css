@@ -60,4 +60,23 @@ button {
   transform: translate(-50%, -50%);
   font-size: 22px;
   font-family: Arial, Helvetica, sans-serif;
+  animation: 1s drop;
+}
+
+@keyframes drop {
+  0% {
+    top: -100px;
+  }
+
+  100% {
+    top: 50%;
+  }
+}
+
+.X {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  font-size: 30px;
+  cursor: pointer;
 }
