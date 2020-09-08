@@ -16,3 +16,12 @@ function disappear() {
   parent.style.display = "none";
   section.style.filter = "blur(0)";
 }
+
+parent.addEventListener("click", disappearParent);
+
+function disappearParent(e) {
+  if (e.target.className === "modal-parent") {
+    parent.style.display = "none";
+    section.style.filter = "blur(0)";
+  }
+}
